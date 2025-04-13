@@ -141,9 +141,10 @@ ul.main-menu li a.active {
   display:block;
 }
 
-.subtitle {
-  font-size: 1.0rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-  color: #cfd2da; /* optional styling */
+#myPieChart {
+  display: block;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px;
 }
