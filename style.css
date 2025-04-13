@@ -142,5 +142,7 @@ ul.main-menu li a.active {
 }
 
 .pie {
+  width: 200px;
+  height: 200px;
   border-radius: 50%
 }
