@@ -12,6 +12,8 @@ body {
   color: #333;
   line-height: 1.6;
   padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px; /* 👈 adds margin on sides by capping width */
 }
 
 /* Navigation bar */
@@ -21,10 +23,12 @@ nav {
   margin-bottom: 30px;
 }
 
+/* Make nav horizontal */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* helps on smaller screens */
 }
 
 nav li {
@@ -51,12 +55,15 @@ h1, h2, h3 {
 }
 
 /* Main content */
+main {
+  margin: 0 20px;
+}
+
 p {
-  max-width: 800px;
   margin-bottom: 20px;
 }
 
-/* Footer (optional) */
+/* Footer */
 footer {
   margin-top: 50px;
   text-align: center;
