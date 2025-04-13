@@ -1,69 +1,46 @@
+# Simple Website Using Github Pages
+Make a simple HTML website and publish it using Github Pages.  
+View example: https://zirafa.github.io/simple-website-template/
 
+## Setup
+- Create a Github account (if you don't have one yet)
+- Fork this repository to copy it to your account, i.e. github.com/username/simple-website-template (you can rename it as well)
+- Make sure you see the gh-pages branch (it should be the default)
+- Edit website files on the gh-pages branch, then wait a minute or two for Github Pages to update and deploy your site.
+- View your site: https://username.github.io/simple-website-template
 
-![Github Forks](https://img.shields.io/github/forks/senli1073/senli1073.github.io?style=flat)
-![Github Stars](https://img.shields.io/github/stars/senli1073/senli1073.github.io?style=flat)
-![License](https://img.shields.io/github/license/senli1073/senli1073.github.io)
-![Last Commit](https://img.shields.io/github/last-commit/senli1073/senli1073.github.io)
+## How does this work?
+This website template uses CSS & JS to hide and show different parts of index.html and uses Github Pages to render the website from the gh-pages branch.
 
-# A simple Github Pages template for personal academic websites.
+## Things to try
+- Edit index.html and change the title of the page
+- Edit index.html and change the content displayed in home, about, and contact.
+- Edit index.html and change the content in the footer region.
+- Replace logo.jpg and background.jpg with your own images.
+- Update the metadata in the header portion of index.html (this is used by search engines and browsers).
+- Edit style.css and change the link color and font style.
 
-## Preview
-[![Screenshot of the Website](https://raw.githubusercontent.com/senli1073/senli1073.github.io/main/screenshot_full.png)](https://senli1073.github.io/)
+## Further reading
 
+### Can I make separate HTML files for each page?
+You can use Javascript AJAX calls to pull in external content into your index.html page. See script.js for more details.
 
-## Introduction
+### Can I configure a custom domain for my site, i.e. johnnymakerportfolio.com?
+Yes! Github Pages supports [custom domain configuration](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site). However, you will need to buy a domain name from a registrar such as [NameCheap](https://www.namecheap.com/) or [Gandi](https://www.gandi.net/) -- the cost is usually around $10 - $15 a year.
 
-This personal academic website template is based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
+### Can I add a blog, etc?
+This template works best for simple sites. For a blog you can try setting up [Jekyll, which is a static site generator that also works on Github pages](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll). For even more functionality, you will probably need a content management system (CMS) such as [Wordpress](https://wordpress.com), [Drupal](http://drupal.org), or [Django](https://www.djangoproject.com). A CMS will require additional setup and a website host, such as [Dreamhost](https://www.dreamhost.com/). 
 
-The template is designed to integrate Markdown files as content input.  There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
+### Can I add a store?
+If you are interested in selling products online, check out [BigCartel](www.bigcartel.com), which lets you setup a storefront with 5 products for free.
 
-This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
+### I heard I need to be using XYZ framework (Bootstrap, React, etc).
+Web technology changes rapidly, and it easy to get lost in the hype. Learning the basics of HTML, CSS, and JS is a good place to start. From there, you can explore different frameworks and libraries to see what interests you.
 
-:milky_way: Demo: https://senli1073.github.io/
-
-
-## Getting Start
-### 1. Fork this repository
-The repository name should be `<username>.github.io`, which will also be your website's URL.
-
-
-### 2. Edit page content
-
-(1) Go to the folder where you want to store your project, and clone the new repository:
-```
-git clone https://github.com/<username>/<username>.github.io.git
-```
-The directory structure is as follows:
-
-```.
-.
-├── contents
-└── static
-    ├── assets
-    │   └── img
-    ├── css
-    └── js
-```
-
-(2) Modify the content of each section, which corresponds to `contents/*.md`.
-
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
-
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
-
-(5) Push it: 
-```
-git commit -am 'init'
-git push
-```
-
-
-### 3. Enjoy
-
-Fire up a browser and go to `https://<username>.github.io`
+### I don't want to write code or deal with website hosting. Are there any website builders you recommend?
+- Google Sites (free)
+- Squarespace
+- Wix
 
 
 
-## License
-
-Copyright Sen Li, 2023. Licensed under an MIT license. You can copy and mess with this template.
