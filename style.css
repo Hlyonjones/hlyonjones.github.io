@@ -141,10 +141,9 @@ ul.main-menu li a.active {
   display:block;
 }
 
-#myPieChart {
-  display: block;
-  margin: 20px auto;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 10px;
+.pie {
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(orange 64%, blue 64%, blue 81%, black 81%);
+  border-radius: 50%
 }
