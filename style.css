@@ -1,70 +1,74 @@
-/* Reset some default styles */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Body and font */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 0 16px; /* smaller side padding */
-  max-width: 960px;
-  margin: 0 auto;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navigation bar */
-nav {
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
   background-color: #333;
-  padding: 8px 0;
-  margin-bottom: 20px;
 }
 
-/* Horizontal nav list */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 6px 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-/* Headings */
-h1, h2 {
-  margin-bottom: 12px;
-  color: #222;
-}
-
-/* Main content */
-main {
-  margin-bottom: 40px;
-}
-
-/* Paragraph spacing */
-p {
-  margin-bottom: 16px;
-}
-
-/* Footer */
-footer {
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
-  color: #888;
-  font-size: 0.9em;
-  padding: 12px 0;
-  border-top: 1px solid #ddd;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="content">
+  <h2>CSS Template</h2>
+  <p>A topnav, content and a footer.</p>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
+
+
