@@ -142,8 +142,5 @@ ul.main-menu li a.active {
 }
 
 .pie {
-  width: 100px;
-  height: 100px;
-  background-image: conic-gradient(orange 64%, blue 64%, blue 81%, black 81%);
   border-radius: 50%
 }
